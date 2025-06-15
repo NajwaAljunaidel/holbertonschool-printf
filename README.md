@@ -1,10 +1,8 @@
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Holberton_School_logo.png" width="150" alt="Holberton Logo" />
-  <br>
-  <strong style="color:#ff69b4; font-size:18px;">printf gets personal — powered by Najwa & Haifa</strong>
-</p>
+# <a><img src="https://avatars.githubusercontent.com/u/123853162?s=200&v=4" width=3% height=3%></a> \_printf
 
-# &#x20;\_printf
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=28&duration=3000&pause=1000&color=FF69B4&width=435&lines=printf+gets+personal+—+powered+by+Najwa+%26+Haifa" alt="Typing SVG" />
+</p>
 
 ---
 
@@ -96,7 +94,7 @@ printf("Integer: %d\n", 42);
 
 ## Connect With Us
 
-Built with ❤️ at [Holberton School](https://www.holbertonschool.com/) – June 2025
+Built with 💗 at [Holberton School](https://www.holbertonschool.com/) – June 2025
 
 * [NajwaAljunaidel GitHub](https://github.com/NajwaAljunaidel)
 * [Haifahasher GitHub](https://github.com/Haifahasher)
