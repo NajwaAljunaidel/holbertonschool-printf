@@ -2,14 +2,11 @@
   <img src="https://private-user-images.githubusercontent.com/197754999/434705190-5f8d33ce-fed8-438a-935c-a9916afef26e.png?raw=true" alt="Holberton Logo" width="80">
 </div>
 
-# <a><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" width=3% height=3%></img></a> \_printf
+# <a><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg" width=3% height=3%></img></a> _printf
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?center=true&size=28&duration=3000&pause=1000&color=FF69B4&width=435&lines=printf+gets+personal+—+by+Najwa+and+Haifa" alt="Typing SVG" />
 </p>
-
----
-
 ## Overview
 
 The `_printf` project is a thoughtful re-creation of the standard C `printf` function. Engineered by Najwa & Haifa at Holberton School, it emphasizes both correctness and design clarity.
@@ -110,4 +107,3 @@ Built with 💗 at [Holberton School](https://www.holbertonschool.com/) – June
 
 * [NajwaAljunaidel GitHub](https://github.com/NajwaAljunaidel)
 * [Haifahasher GitHub](https://github.com/Haifahasher)
-
