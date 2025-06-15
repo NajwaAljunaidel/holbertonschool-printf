@@ -1,9 +1,7 @@
 <p align="center">
-  <img src="https://www.holbertonschool.com/holberton-logo.png" width="180" alt="Holberton Logo">
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=24&duration=4000&pause=1000&color=FF69B4&width=500&lines=printf+gets+personal+—+powered+by+Najwa+%26+Haifa" alt="Typing Welcome" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Holberton_School_logo.png" width="150" alt="Holberton Logo" />
+  <br>
+  <strong style="color:#ff69b4; font-size:18px;">printf gets personal — powered by Najwa & Haifa</strong>
 </p>
 
 # &#x20;\_printf
