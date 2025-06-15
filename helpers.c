@@ -1,42 +1,38 @@
 #include "main.h"
 
 /**
- * write_unsigned - Recursively writes unsigned integers as decimal.
- * @num: Unsigned integer to write.
+ * write_digits - Converts and writes an unsigned int as decimal digits.
+ * @number: The number to display.
  *
- * Return: Count of digits printed, or -1 if write fails.
+ * Return: Number of digits printed, or -1 on error.
  */
-static int write_unsigned(unsigned int num)
+static int write_digits(unsigned int number)
 {
 	char buffer[12];
-	int index = 0, written = 0;
+	int index = 0, printed = 0;
 
-	if (num == 0)
+	if (number == 0)
+		return (write(1, "0", 1) == -1 ? -1 : 1);
+
+	while (number != 0)
 	{
-		if (write(1, "0", 1) == -1)
-			return (-1);
-		return (1);
+		buffer[index++] = '0' + (number % 10);
+		number /= 10;
 	}
 
-	while (num > 0)
-	{
-		buffer[index++] = (num % 10) + '0';
-		num /= 10;
-	}
-
-	while (index--)
+	while (--index >= 0)
 	{
 		if (write(1, &buffer[index], 1) == -1)
 			return (-1);
-		written++;
+		printed++;
 	}
 
-	return (written);
+	return (printed);
 }
 
 /**
  * print_char - Outputs a single character.
- * @c: The character to output.
+ * @c: Character to print.
  *
  * Return: 1 if successful, -1 on failure.
  */
@@ -46,30 +42,28 @@ int print_char(char c)
 }
 
 /**
- * print_string - Outputs a string of characters.
- * @str: The string to print. If NULL, prints "(null)".
+ * print_string - Outputs a string, or (null) if s is NULL.
+ * @s: The string to print.
  *
- * Return: Total characters printed, or -1 on failure.
+ * Return: Number of characters printed or -1 if failed.
  */
-int print_string(char *str)
+int print_string(char *s)
 {
-	int len = 0;
+	int length = 0;
 
-	if (!str)
-		str = "(null)";
-	while (str[len])
-		len++;
+	if (!s)
+		s = "(null)";
 
-	if (write(1, str, len) == -1)
-		return (-1);
+	while (s[length])
+		length++;
 
-	return (len);
+	return (write(1, s, length) == -1 ? -1 : length);
 }
 
 /**
- * print_percent - Prints a literal percent sign.
+ * print_percent - Prints the '%' character.
  *
- * Return: 1 on success, -1 if write fails.
+ * Return: 1 on success, or -1 if write fails.
  */
 int print_percent(void)
 {
@@ -77,33 +71,32 @@ int print_percent(void)
 }
 
 /**
- * print_integer - Prints a signed integer.
- * @n: Integer to print.
+ * print_integer - Displays an integer using base 10.
+ * @n: The integer value to display.
  *
- * Return: Count of printed characters, or -1 on failure.
+ * Return: Count of characters printed, -1 if error.
  */
 int print_integer(int n)
 {
-	unsigned int num;
-	int total = 0, result;
+	unsigned int positive;
+	int total = 0, res;
 
 	if (n < 0)
 	{
 		if (write(1, "-", 1) == -1)
 			return (-1);
 		total++;
-		num = (unsigned int)(-1 * (long)n);
+		positive = (unsigned int)(-1L * n);
 	}
 	else
 	{
-		num = (unsigned int)n;
+		positive = (unsigned int)n;
 	}
 
-	result = write_unsigned(num);
-	if (result < 0)
+	res = write_digits(positive);
+	if (res == -1)
 		return (-1);
 
-	total += result;
-	return (total);
+	return (total + res);
 }
 
