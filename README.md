@@ -1,8 +1,12 @@
-# <a><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Logo.svg" width=3% height=3%></img></a> \_printf
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NajwaAljunaidel/holbertonschool-printf/main/Holberton.png" width="180" alt="Holberton Logo">
+</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=24&duration=3500&pause=1000&color=FF69B4&width=480&lines=printf+gets+personal+—+by+Najwa+%26+Haifa+at+Holberton+School" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=24&duration=4000&pause=1000&color=FF69B4&width=500&lines=printf+gets+personal+—+powered+by+Najwa+%26+Haifa" alt="Typing Welcome" />
 </p>
+
+# &#x20;\_printf
 
 ---
 
@@ -30,13 +34,13 @@ int _printf(const char *format, ...);
 
 ## Project Files
 
-| File Name                                                                                          | Description                                                                           |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [`_printf.c`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/_printf.c)       | Core logic for handling format strings and directing to the correct handler functions |
-| [`helpers.c`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/helpers.c)       | Functions for printing characters, strings, integers, and percent signs               |
-| [`main.h`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/main.h)             | Header file containing function prototypes and macros                                 |
-| [`test/main.c`](#)                                                                                 | Sample test cases for validating functionality (not committed publicly yet)           |
-| [`man_3_printf`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/man_3_printf) | Manual page documentation for `_printf`                                               |
+| File                                                                                               | Purpose                                                             |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [`_printf.c`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/_printf.c)       | Main logic that interprets and routes format strings                |
+| [`helpers.c`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/helpers.c)       | Implements helper functions like `print_char`, `print_string`, etc. |
+| [`main.h`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/main.h)             | Header file with prototypes and macros                              |
+| [`test/main.c`](#)                                                                                 | Sample test driver (currently local)                                |
+| [`man_3_printf`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/man_3_printf) | Manual page for terminal usage                                      |
 
 ---
 
@@ -94,10 +98,8 @@ printf("Integer: %d\n", 42);
 
 ## Connect With Us
 
-Stay connected through GitHub:
+Built with ❤️ at [Holberton School](https://www.holbertonschool.com/) – June 2025
 
-* GitHub: [NajwaAljunaidel](https://github.com/NajwaAljunaidel)
-* GitHub: [Haifahasher](https://github.com/Haifahasher)
-
-Project by Holberton School – June 2025
+* [NajwaAljunaidel GitHub](https://github.com/NajwaAljunaidel)
+* [Haifahasher GitHub](https://github.com/Haifahasher)
 
