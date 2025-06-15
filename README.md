@@ -1,7 +1,7 @@
-# <a><img src="https://avatars.githubusercontent.com/u/123853162?s=200&v=4" width=3% height=3%></a> \_printf
+# <a><img src="https://raw.githubusercontent.com/holbertonschool/brand-assets/main/holberton-logo/holberton-logo-red.png" width=5% height=5%></a> \_printf
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=28&duration=3000&pause=1000&color=FF69B4&width=435&lines=printf+gets+personal+—+powered+by+Najwa+%26+Haifa" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=28&duration=3000&pause=1000&color=FF69B4&width=600&lines=printf+gets+personal+—+by+Najwa+and+Haifa" alt="Typing SVG" />
 </p>
 
 ---
