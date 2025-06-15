@@ -1,15 +1,8 @@
-# \_printf
+# <a><img src="https://raw.githubusercontent.com/github/explore/main/topics/c/c.png" width=3% height=3%></img></a> \_printf
 
-<table>
-  <tr>
-    <td style="text-align:left;">
-      <h3 style="color:#FF69B4; font-weight:bold;">printf gets personal — by Najwa and Haifa</h3>
-    </td>
-    <td style="text-align:right;">
-      <img src="https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/holberton.png?raw=true" alt="Holberton Logo" width="130">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=28&duration=3000&pause=1000&color=FF69B4&width=435&lines=printf+gets+personal+—+by+Najwa+and+Haifa" alt="Typing SVG" />
+</p>
 
 ---
 
@@ -37,13 +30,13 @@ int _printf(const char *format, ...);
 
 ## Project Files
 
-| File                                                                                               | Purpose                                                             |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [`_printf.c`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/_printf.c)       | Main logic that interprets and routes format strings                |
-| [`helpers.c`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/helpers.c)       | Implements helper functions like `print_char`, `print_string`, etc. |
-| [`main.h`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/main.h)             | Header file with prototypes and macros                              |
-| [`test/main.c`](#)                                                                                 | Sample test driver (currently local)                                |
-| [`man_3_printf`](https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/man_3_printf) | Manual page for terminal usage                                      |
+```text
+📁 _printf.c       → Main logic that interprets and routes format strings
+📁 helpers.c       → Implements helper functions like print_char, print_string, etc.
+📁 main.h          → Header file with prototypes and macros
+📁 test/main.c     → Sample test driver (currently local)
+📁 man_3_printf    → Manual page for terminal usage
+```
 
 ---
 
@@ -67,24 +60,18 @@ _printf("Char: %c\n", 'A');         // Output: Char: A
 
 ## Manual Page
 
-<table>
-  <tr>
-    <td style="text-align:left; vertical-align:top;">
-
 To view the manual page:
 
 ```bash
 man ./man_3_printf
 ```
 
-```
+<table>
+<tr>
+<td>
+<img src="https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/man_example.png?raw=true" width="180" alt="Manual Screenshot">
 </td>
-<td style="text-align:right; vertical-align:top;">
-  <img src="https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/man_example.png?raw=true" width="180" alt="Manual Screenshot">
-</td>
-```
-
-  </tr>
+</tr>
 </table>
 
 ---
