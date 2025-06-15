@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=26&duration=3000&pause=1000&color=36BCF7&width=500&lines=Welcome+to+printf+function+lesson;printf+gets+personal+—+powered+by+Najwa+%26+Haifa" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=26&duration=3000&pause=1000&color=FF69B4&width=500&lines=Welcome+to+printf+function+lesson;printf+gets+personal+—+powered+by+Najwa+%26+Haifa" alt="Typing SVG" />
 </p>
 
 ---
@@ -92,7 +92,7 @@ printf("Integer: %d\n", 42);
 ## Authors
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=20&duration=4000&pause=1000&color=36BCF7&width=410&lines=Crafted+by+Najwa+%26+Haifa+with+clarity+%26+code" alt="Typing Authors" />
+  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=20&duration=4000&pause=1000&color=FF69B4&width=410&lines=Crafted+by+Najwa+%26+Haifa+with+clarity+%26+code" alt="Typing Authors" />
 </p>
 
 <p align="center">Holberton School — June 2025</p>
@@ -103,4 +103,4 @@ printf("Integer: %d\n", 42);
 
 * Najwa Aljunaidel → [@NajwaAljunaidel](https://github.com/NajwaAljunaidel)
 * Haifa Hasher → [@Haifahasher](https://github.com/Haifahasher)
-
+ 
