@@ -1,103 +1,103 @@
 #include "main.h"
 
 /**
- * handle_format - Processes a format specifier after '%'.
- * @specifier: Format character to interpret.
- * @args: List of variadic arguments.
- * @printed: Pointer to an integer to store printed character count.
+ * process_specifier - Determines and handles format specifiers.
+ * @sp: The format specifier character after '%'.
+ * @args: The variadic argument list.
+ * @printed: Pointer to count of printed characters.
  *
- * Supported specifiers:
- *   'c' - character
- *   's' - string
- *   '%' - percent symbol
- *   'd', 'i' - signed integer
- * Unrecognized: prints "%<specifier>" literally
+ * Handles:
+ *   %c - character
+ *   %s - string
+ *   %% - percent
+ *   %d, %i - integer
+ * Prints unknown specifiers literally (e.g., %q).
  *
- * Return: 
- *   0 if handled successfully,
- *   2 if printed as literal (e.g., %x),
- *  -1 on failure.
+ * Return:
+ *   0 if handled by helper function,
+ *   2 if printed as literal (e.g., "%x"),
+ *  -1 if an error occurs.
  */
-static int handle_format(char specifier, va_list args, int *printed)
+static int process_specifier(char sp, va_list args, int *printed)
 {
-	int result;
+	int res;
 
-	switch (specifier)
+	switch (sp)
 	{
-	case 'c':
-		result = print_char((char)va_arg(args, int));
-		break;
-	case 's':
-		result = print_string(va_arg(args, char *));
-		break;
-	case '%':
-		result = print_percent();
-		break;
-	case 'd':
-	case 'i':
-		result = print_integer(va_arg(args, int));
-		break;
-	case '\0':
-		return (-1);
-	default:
-		if (write(1, "%", 1) == -1 || write(1, &specifier, 1) == -1)
+		case 'c':
+			res = print_char((char)va_arg(args, int));
+			break;
+		case 's':
+			res = print_string(va_arg(args, char *));
+			break;
+		case '%':
+			res = print_percent();
+			break;
+		case 'd':
+		case 'i':
+			res = print_integer(va_arg(args, int));
+			break;
+		case '\0':
 			return (-1);
-		return (2);
+		default:
+			if (write(1, "%", 1) == -1 || write(1, &sp, 1) == -1)
+				return (-1);
+			return (2);
 	}
 
-	*printed = result;
-	return (result < 0 ? -1 : 0);
+	*printed = res;
+	return (res < 0 ? -1 : 0);
 }
 
 /**
- * _printf - Custom formatted output function.
- * @format: Input format string with optional specifiers.
+ * _printf - Reimplementation of printf for formatted output.
+ * @format: The format string containing characters and tokens.
  *
- * Functionality:
- *   Parses @format, processes tokens, and prints characters accordingly.
- *   Supports %c, %s, %d, %i, and %%.
+ * Description:
+ *   Prints to standard output using a simplified version of printf.
+ *   Supports %c, %s, %%, %d, and %i.
  *
- * Return: Number of characters printed (excluding null byte), or -1 on error.
+ * Return: Total number of characters printed, or -1 on failure.
  */
 int _printf(const char *format, ...)
 {
 	va_list args;
-	const char *cursor;
-	int count = 0, chars_printed = 0, result;
+	const char *ptr;
+	int total = 0, printed = 0, out;
 
 	if (!format)
 		return (-1);
 
 	va_start(args, format);
-	cursor = format;
+	ptr = format;
 
-	while (*cursor)
+	while (*ptr)
 	{
-		if (*cursor != '%')
+		if (*ptr != '%')
 		{
-			if (write(1, cursor, 1) == -1)
+			if (write(1, ptr, 1) == -1)
 			{
 				va_end(args);
 				return (-1);
 			}
-			count++;
-			cursor++;
+			total++;
+			ptr++;
 			continue;
 		}
 
-		cursor++;  /* Skip '%' */
-		chars_printed = 0;
-		result = handle_format(*cursor, args, &chars_printed);
-		if (result == -1)
+		ptr++; /* Move past '%' */
+		printed = 0;
+		out = process_specifier(*ptr, args, &printed);
+		if (out == -1)
 		{
 			va_end(args);
 			return (-1);
 		}
-		count += result + chars_printed;
-		cursor++;
+		total += out + printed;
+		ptr++;
 	}
 
 	va_end(args);
-	return (count);
+	return (total);
 }
 
