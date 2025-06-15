@@ -1,4 +1,4 @@
-# <a><img src="https://raw.githubusercontent.com/holbertonschool/brand-assets/main/holberton-logo/holberton-logo-red.png" width=5% height=5%></a> \_printf
+# <a><img src="https://private-user-images.githubusercontent.com/197754999/434705190-5f8d33ce-fed8-438a-935c-a9916afef26e.png" width=5% height=5%></a> \_printf
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?center=true&size=28&duration=3000&pause=1000&color=FF69B4&width=600&lines=printf+gets+personal+—+by+Najwa+and+Haifa" alt="Typing SVG" />
