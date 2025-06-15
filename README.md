@@ -1,8 +1,15 @@
-# <a><img src="https://private-user-images.githubusercontent.com/197754999/434705190-5f8d33ce-fed8-438a-935c-a9916afef26e.png" width=5% height=5%></a> \_printf
+# \_printf
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?center=true&size=28&duration=3000&pause=1000&color=FF69B4&width=600&lines=printf+gets+personal+—+by+Najwa+and+Haifa" alt="Typing SVG" />
-</p>
+<table>
+  <tr>
+    <td style="text-align:left;">
+      <h3 style="color:#FF69B4; font-weight:bold;">printf gets personal — by Najwa and Haifa</h3>
+    </td>
+    <td style="text-align:right;">
+      <img src="https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/holberton.png?raw=true" alt="Holberton Logo" width="130">
+    </td>
+  </tr>
+</table>
 
 ---
 
