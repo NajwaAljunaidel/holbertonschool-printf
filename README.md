@@ -63,23 +63,7 @@ _printf("Char: %c\n", 'A');         // Output: Char: A
 
 ---
 
-## Manual Page
 
-To view the manual page:
-
-```bash
-man ./man_3_printf
-```
-
-<table>
-<tr>
-<td>
-<img src="https://github.com/NajwaAljunaidel/holbertonschool-printf/blob/main/man_example.png?raw=true" width="180" alt="Manual Screenshot">
-</td>
-</tr>
-</table>
-
----
 
 ## Testing
 
