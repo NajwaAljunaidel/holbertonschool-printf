@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NajwaAljunaidel/holbertonschool-printf/main/Holberton.png" width="180" alt="Holberton Logo">
+  <img src="https://www.holbertonschool.com/holberton-logo.png" width="180" alt="Holberton Logo">
 </p>
 
 <p align="center">
